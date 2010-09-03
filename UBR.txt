@@ -1,0 +1,87 @@
+:Lbl 0
+:Menu("Seite 1/2","Ende",1,"UBR",2,"Welle",3,"Foto",4,"Weiter",7)
+:Lbl 2
+:"UBR"
+:ClrHome
+:Disp "h=?p*?x"
+:Disp "h=?t*?W"
+:Disp "h=?W/c"
+:Disp "p=m*v=m*c"
+:Disp "Wph=h*f"
+:Disp "m=h*f/c{^2}=h/(?*c)"
+:Pause 
+:Goto 0
+:Lbl 3
+:"Welle"
+:ClrHome
+:Disp "?=h/p"
+:Disp "h=?*p"
+:Disp "Wkin=Wel"
+:Disp "0.5*m*v{^2}=e*U"
+:Disp "v=sqrt(2eU*m)"
+:Disp "sinA=g/d"
+:Disp "tanA=x/a"
+:Pause 
+:Goto 0
+:Lbl 4
+:"Photo"
+:ClrHome
+:Disp "Wph=Wa+Wel"
+:Disp "h*f=Wa+e*U"
+:Disp "h=?W/?f"
+:Disp "c=?*f"
+:Disp "Wel(f)=W*f+c"
+:Disp "Wel(f)=h*f-Wa"
+:Disp ""
+:Pause 
+:Goto 0
+:Lbl 5
+:"L"
+:ClrHome
+:Disp "?x=L"
+:Disp "?p=2?p=h/L=>h/2L"
+:Disp "Wl=h{^2}/(8mL{^2})"
+:Pause 
+:Goto 0
+:"Seite 2"
+:Lbl 7
+:ClrHome
+:Menu("Seite 2/2","Ende",1,"Seite 1",0,"Einzelspalt",8,"Mehrfachspalt",9,"Formeln",10)
+:Goto 7
+:Lbl 8
+:"Einzelspalt"
+:ClrHome
+:Disp "Einz. Minima:"
+:Disp "sin(a)=g/b"
+:Disp "tan(a)=x/a"
+:Disp "g=k*lambda"
+:Disp "k=1,2,3,.."
+:Pause 
+:Goto 0
+:Lbl 9
+:"Mehrfachspalt"
+:ClrHome
+:Disp "sin(a)=g/d"
+:Disp "tan(a)=x/a"
+:Disp "Maxima:"
+:Disp "g=k*lambda"
+:Disp "Minima:"
+:Disp "g=k*lambda/N"
+:Disp "k?n*N,k=0,1,.."
+:Pause 
+:Goto 0
+:Lbl 10
+:"Formeln"
+:ClrHome
+:Disp "c=lambda*f"
+:Disp "c=lambda/T"
+:Disp "c=x/t"
+:Disp "cN=c0/n"
+:Disp "w=2p/T=2pf"
+:Disp "N-1 Minima/Null"
+:Disp "N-2 Nebenmaxima"
+:Pause 
+:Goto 0
+:Lbl 1
+:ClrHome
+:Return

@@ -1,0 +1,234 @@
+If X!=15
+Then
+	Goto 2
+End
+Lbl 0
+ClrHome
+"Version 1.5"
+"I"->Str1
+Disp "I,Q,U,E,S,W,C,F"
+Disp "B,V,SY,PHI,G,A,L"
+Disp "pi,T,P"
+Disp "TRI,KONST,PRAE"
+Disp "+ = Ende"
+While Str1!="X" and Str1!="+"
+	Input "?",Str1
+	If Str1="-"
+	Then
+		Goto 0
+	End
+	If Str1="I"
+	Then
+		Disp "Stromstaerke"
+		Disp "--A"
+		Disp "I=Q/T"
+		Disp "I=(N*e*v)/s"
+		Disp "Q=I*t"
+		Disp "P=U*I"
+		Disp "W=U*I*t"
+	End
+	If Str1="Q"
+	Then
+		Disp "Ladung As=C"
+		Disp "Q=C*U"
+		Disp "Q=N*e"
+		Disp "Q=Sig*A"
+		Disp "q=F/E"
+		Disp "W=q*E*d"
+		Disp "W=0.5*(Q2/C)"
+	End
+	If Str1="U"
+	Then
+		Disp "Spannung"
+		Disp "--J/C"
+		Disp "--(Nm)/(As)=V"
+		Disp "Uind=~n*PHI'"
+		Disp " =~n*(B'*A+B*A')"
+		Disp "Uind=~n*(B*v*l)"
+		Disp ">>>"
+		Pause 
+		Disp "Uind=-L*J'"
+		Disp "U=-nAu0ur(n/l)I'"
+		Disp "U(t)=Umax*sin(wt"
+		Disp "Umax=n*B*Amax*w"
+		Disp " =n*B*l*2*r*w"
+		Disp " =n*B*l*2*v"
+		Disp ">>>"
+		Pause 
+		Disp "Umax=sqrt(2)*Ueff"
+		Disp "C=Q/U"
+		Disp "U=R*J"
+		Disp "E=U/d     P=U*I"
+		Disp "W=0.5*C*U2"
+		Disp "W Dichte"
+		Disp "B^^2/(2*ur*u0)"
+	End
+	If Str1="E"
+	Then
+		Disp "Feldstaerke"
+		Disp "--V/m=J/(Cm)=N/C"
+		Disp "E=F/q"
+		Disp "E=U/d"
+		Disp "F=q*E"
+		Disp "Eo=Sig/E"
+		Disp "Roh=0.5*Eo*Er*E2"
+	End
+	If Str1="S" or Str1="SIG"
+	Then
+		Disp "Ladungsdichte"
+		Disp "--C/m2"
+		Disp "Sig=Eo*Er*E"
+		Disp "Sig=Q/A"
+	End
+	If Str1="W"
+	Then
+		Disp "Arbeit/Energie"
+		Disp "--Nm=J"
+		Disp "W=0.5*C*U2"
+		Disp "W=U*Q"
+		Disp "W=0.5*L*J^^2"
+		Disp "W=U*I*t"
+		Disp ">>>"
+		Pause 
+		Disp "W=0.5*D*s^^2"
+		Disp "W=0.5*(Q2/C)"
+		Disp "W=0.5*m*v2"
+		Disp "W=F*s"
+		Disp "W=e*U=q*E*s"
+		Disp "W Dichte"
+		Disp "B^^2/(2*ur*u0)"
+	End
+	If Str1="C"
+	Then
+		Disp "Kapazitaet"
+		Disp "--C/V=F"
+		Disp "C=Eo*Er*(A/d)"
+		Disp "C=Q/U"
+		Disp "Q=C*U"
+		Disp "W=0.5*C*U2"
+	End
+	If Str1="F"
+	Then
+		Disp "Kraft"
+		Disp "--(kg*m)/s2=N"
+		Disp "Fel=q*(U/d)"
+		Disp "F=B*I*s"
+		Disp "F=-D*s"
+		Disp "m*a=-D*s"
+		Disp ">>>"
+		Pause 
+		Disp "F=-m*g*sin(alpha)"
+		Disp "F=-m*g*(s/l)"
+		Disp "F=B*e*v"
+		Disp "Fz=m*(v2/r)"
+		Disp "Fkin=M*A"
+	End
+	If Str1="TRI" or Str1="sin(" or Str1="cos(" or Str1="tan("
+	Then
+		Disp "sin()=Gegen/Hypo"
+		Disp "cos()=Ankat/Hypo"
+		Disp "tan()=Gegen/Ankat"
+		Disp "cot()=Ankat/Gegen"
+	End
+	If Str1="PRAE" or Str1="[e]^" or Str1="|E"
+	Then
+		Disp "p=E~12"
+		Disp "n=E~9"
+		Disp "u=E~6"
+		Disp "m=E~3"
+		Disp "k=E3"
+		Disp "M=E6"
+	End
+	If Str1="KONST" or Str1="[e]"
+	Then
+		Disp "Eo=8.85E~12 F/m"
+		Disp "e=1.602E~19 C"
+		Disp "me=9.109E~31 kg"
+		Disp "mp=1.672E~27 kg"
+		Disp "Mo=1.25E~6Vs/Am"
+	End
+	If Str1="B"
+	Then
+		Disp "mag.Fl.Dichte"
+		Disp "--N/(A*m)=T"
+		Disp "B=F/(I*s)"
+		Disp "B=F/(e*v)"
+		Disp "Hall: e*E=e*v*B"
+		Disp "B hall=U/(d*v)"
+		Disp "Bs=Mo*Mr*I*(n/l)"
+	End
+	If Str1="v" or Str1="V"
+	Then
+		Disp "Geschwindigkeit"
+		Disp "s''=v'=a"
+		Disp "vmax=smax*w"
+		Disp "v=s/t"
+		Disp "v=a*t"
+		Disp "v=sqrt(2eU/m)"
+		Disp "v=w*r"
+	End
+	If Str1="PHI" or Str1="theta"
+	Then
+		Disp "Mag.Fluss"
+		Disp "PHI=A*B"
+		Disp "PHI'=B'*A+B*A'"
+	End
+	If Str1="G" or Str1="g"
+	Then
+		Disp "Ganghoehe"
+		Disp "g=Vpara*T"
+		Disp "=V*(2pi*m/(Be))"
+		Disp "Radius"
+		Disp "r=m*Vsenk/(B*e)"
+	End
+	If Str1="A" or Str1="a"
+	Then
+		Disp "Beschleunigung"
+		Disp "Fkin=Fel"
+		Disp "m*a=e*E"
+		Disp "a=e*E/m"
+		Disp "a=dV/dt"
+		Disp "a=v'=s''"
+	End
+	If Str1="SY"
+	Then
+		Disp "Sy=0.5*a*t2"
+	End
+	If Str1="L"
+	Then
+		Disp "Eigen Indukt."
+		Disp "--(V*s)/A=H"
+		Disp "L=n^^2*u0*ur*(A/l)"
+		Disp "L=-Uind/I'"
+	End
+	If Str1="pi" or Str1="PI" or Str1="WV"
+	Then
+		Disp "Winkelgeschw."
+		Disp "--1/s"
+		Disp "w=(2pi)/T"
+		Disp "w=2pi*f"
+		Disp "w=Winkel/t"
+		Disp "w=v/r"
+		Disp "b=2pir*Winkel/360"
+	End
+	If Str1="T"
+	Then
+		Disp "Periodendauer"
+		Disp "T=2pi*w"
+		Disp "T=2pi*sqrt((m/D))"
+		Disp "T=2pi*sqrt((l/g))"
+	End
+	If Str1="P"
+	Then
+		Disp "Leistung"
+		Disp "--Nm/s=J/s=W"
+		Disp "P=U*I"
+		Disp "P=W/t"
+		Disp "P=(F*S)/t"
+		Disp "P=F*v"
+		Disp "P=B*I*l*v"
+	End
+End
+"(C) cuzi"
+Lbl 2
+ClrHome

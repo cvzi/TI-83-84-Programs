@@ -1,0 +1,84 @@
+Lbl 0
+Menu("Wellen 1/2","Ende",1,"Einzelspalt",2,"Mehrfachspalt",3,"Wellen",4,"Formeln",5,"Dispersion",6,"Weiter",7)
+Lbl 2
+ClrHome
+Disp "Einz. Minima:"
+Disp "sin(a)=g/b"
+Disp "tan(a)=x/a"
+Disp "g=k*lambda"
+Disp "k=1,2,3,.."
+Pause 
+Goto 0
+Lbl 3
+ClrHome
+Disp "sin(a)=g/d"
+Disp "tan(a)=x/a"
+Disp "Maxima:"
+Disp "g=k*lambda"
+Disp "Minima:"
+Disp "g=k*lambda/N"
+Disp "k!=n*N,k=0,1,.."
+Pause 
+Goto 0
+Lbl 4
+ClrHome
+Disp "s(x,t)=s*sin("
+Disp "2pi(t/T-x/lambda)"
+Disp "s(t)=s*sin(wt)"
+Disp "v(t)=swcos(wt)"
+Disp "a(t)=~sw^^2sin(wt)"
+Disp "k-Ordnung:"
+Disp "(k+1)*lambda/2"
+Pause 
+Goto 0
+Lbl 5
+ClrHome
+Disp "c=lambda*f"
+Disp "c=lambda/T"
+Disp "c=x/t"
+Disp "cN=c0/n"
+Disp "w=2pi/T=2pif"
+Disp "N-1 Minima/Null"
+Disp "N-2 Nebenmaxima"
+Pause 
+Goto 0
+Lbl 6
+ClrHome
+Disp "Dispersion"
+Disp "c abhaengig von"
+Disp "Wellenlaenge"
+Disp "c=lamda*f"
+Disp "cN=c0/n"
+Disp "sinA/sinB=n1/n2"
+Disp "=n=c1/c2"
+Pause 
+Goto 0
+
+Lbl 7
+ClrHome
+Menu("Wellen 2/2","Ende",1,"Zurueck",0,"Beugung",8,"Farben",9)
+Goto 7
+
+Lbl 8
+ClrHome
+Disp "Wellefr.-Gitter"
+Disp "jew.Elementarw."
+Disp "kon.Interferenz"
+Disp "bei g=k*lambda"
+Disp "Ueberlagerung v"
+Disp "Spektren moegl."
+Pause 
+Goto 0
+Lbl 9
+ClrHome
+Disp "rot      800nm"
+Disp "(Laser)  633nm"
+Disp "gelb     580nm"
+Disp "gruen    527nm"
+Disp "blau     480nm"
+Disp "lila     420nm"
+Pause 
+Goto 0
+Lbl 1
+ClrHome
+Return

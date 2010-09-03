@@ -1,0 +1,36 @@
+Input M
+If M>300
+309->M
+Disp "CALC ...."
+seq(1,I,2,M,1)->L1
+For(I,2,sqrt(M),1)
+	If L1(I)=1
+	Then
+		For(A,2*I,M,I)
+			0->L1(A)
+		End
+	End
+End
+AxesOff
+ClrDraw
+0->N
+0->S
+0->B
+For(I,2,M-1,1)
+	If L1(I)=1
+	Then
+		Text(N*7,S,I)
+		1+N->N
+		If N>8
+		Then
+			0->N
+			5*C+S+5->S
+		End
+		int(log(I))->C
+	End
+End
+Pause 
+ClrDraw
+AxesOn
+Disp "SIEB DES"
+Disp "ERATHOSTENES"
